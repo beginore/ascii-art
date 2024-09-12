@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-art-web</title>
+</head>
+<body>
+    <h1>Ascii-Art-Web</h1>
+    <form action="/ascii-art" method = "post">
+        <textarea name="input" id="input-text" placeholder="Write to generate here..."></textarea>
+        <label for="font">Choose font:</label>
+
+        <select name="font">
+          <option value="standard">standard</option>
+          <option value="shadow">shadow</option>
+          <option value="thinkertoy">thinkertoy</option>
+        </select> 
+        <button type="submit">Generate</button> 
+    </form> 
+    <pre>{{ . }}</pre>                
+</body>
+</html>
